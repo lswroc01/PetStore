@@ -1,0 +1,60 @@
+﻿@model IEnumerable<MvcPetStore.Models.Pet>
+
+@{
+    ViewBag.Title = "PetInventory";
+}
+
+<h2>Current Pet Inventory</h2>
+
+@foreach (var item in Model)
+{
+    <div class="row">
+        <div class="col-md-1">
+
+            @if (item.PetType == "Dog")
+            {
+                <img src="/Content/Images/siberian_husky.jpg" alt="Siberian Husky Puppy" width="80px" height="80px" />
+            }
+
+            @if (item.PetType == "Cat")
+            {
+                <img src="/Content/Images/egyptian_mau_cat.jpg" alt="Egyptian Mau Kitten" width="80px" height="80px" />
+            }
+
+            @if (item.PetType == "Bird")
+            {
+                <img src="/Content/Images/rainbow_lorikeet.jpg" alt="Rainbow Lorikeet" width="80px" height="80px" />
+            }
+
+            @if (item.PetType == "Lizard")
+            {
+                <img src="/Content/Images/panther_chameleon.jpg" alt="Panther Chameleon" width="80px" height="80px" />
+            }
+
+            @if (item.PetType == "Fish")
+            {
+                <img src="/Content/Images/pigeon_blood_discus.jpg" alt="Pigeon Blood Discus" width="80px" height="80px" />
+            }
+
+        </div>
+
+        < div class="col-md-3">
+
+        <p>
+            <a href="PetInventory/Details/@item.ID">View</a>
+        </p>
+
+        <p>
+            <em><b>Pet Type:</b></em>
+            @Html.DisplayFor(modelItem => item.PetType)
+        </p>
+
+        <p>
+            <em><b>Breed:</b></em>
+            @Html.DisplayFor(modelItem => item.Breed)
+        </p>
+
+    </div>
+
+    </div>
+}
