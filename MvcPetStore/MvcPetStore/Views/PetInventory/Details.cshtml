@@ -14,35 +14,37 @@
             <div class="col-md-5">
 
                 @if (item.PetType == "Dog")
-                {
-                    <img src="/Content/Images/siberian_husky.jpg" alt="Siberian Husky Puppy" width="250px" height="250px" />
-                }
+{
+    <img src="../../Content/Images/siberian_husky.jpg" alt="Siberian Husky Puppy" width="250px" height="250px" />
+}
 
                 @if (item.PetType == "Cat")
-                {
-                    <img src="/Content/Images/egyptian_mau_cat.jpg" alt="Egyptian Mau Kitten" width="250px" height="250px" />
-                }
+{
+    <img src="../../Content/Images/egyptian_mau_cat.jpg" alt="Egyptian Mau Kitten" width="250px" height="250px" />
+}
 
                 @if (item.PetType == "Bird")
-                {
-                    <img src="/Content/Images/rainbow_lorikeet.jpg" alt="Rainbow Lorikeet" width="250px" height="250px" />
-                }
+{
+    <img src="../../Content/Images/rainbow_lorikeet.jpg" alt="Rainbow Lorikeet" width="250px" height="250px" />
+}
 
                 @if (item.PetType == "Lizard")
-                {
-                    <img src="/Content/Images/panther_chameleon.jpg" alt="Panther Chameleon" width="250px" height="250px" />
-                }
+{
+    <img src="../../Content/Images/panther_chameleon.jpg" alt="Panther Chameleon" width="250px" height="250px" />
+}
 
                 @if (item.PetType == "Fish")
-                {
-                    <img src="/Content/Images/pigeon_blood_discus.jpg" alt="Pigeon Blood Discus" width="250px" height="250px" />
-                }
+{
+    <img src="../../Content/Images/pigeon_blood_discus.jpg" alt="Pigeon Blood Discus" width="250px" height="250px" />
+}
 
 
                 <br />
-                <p style="font-size:18pt;font-weight: bold; text-align: center">$@Html.DisplayFor(modelItem => item.Price)</p>
+                <p style="font-size:18pt;font-weight: bold; text-align: center">@Html.DisplayFor(modelItem => item.Price)</p>
 
             </div>
+                <br />
+                <br />
 
             <div class="col-md-9">
                 <p>
