@@ -173,11 +173,12 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Images\bird.jpg" />
-    <Content Include="Content\Images\cat.jpg" />
-    <Content Include="Content\Images\dog.jpg" />
-    <Content Include="Content\Images\fish.jpg" />
-    <Content Include="Content\Images\lizard.jpg" />
+    <Content Include="Content\Images\egyptian_mau_cat.jpg" />
+    <Content Include="Content\Images\husky_puppies_wide.jpg" />
+    <Content Include="Content\Images\panther_chameleon.JPG" />
+    <Content Include="Content\Images\pigeon_blood_discus.jpg" />
+    <Content Include="Content\Images\rainbow_lorikeet.jpg" />
+    <Content Include="Content\Images\siberian_husky.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
