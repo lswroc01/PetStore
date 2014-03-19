@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace MvcPetStore.Controllers
 {
-    public class InventoryController : Controller
+    public class PetInventoryController : Controller
     {
         private PetStoreDBContext db = new PetStoreDBContext();
         //
